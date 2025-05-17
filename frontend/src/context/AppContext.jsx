@@ -11,7 +11,7 @@ const AppContextProvider = (props) => {
     const savedToken = localStorage.getItem('token');
     return savedToken || '';
   });
-  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  const backendUrl = "https://mediq-backend.onrender.com";
   console.log(backendUrl);
   const [userData, setUserData] = useState({});
 

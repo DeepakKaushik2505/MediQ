@@ -9,7 +9,7 @@ const AdminContextProvider = ( props ) => {
     localStorage.getItem("aToken") || ''
   );
   
-  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  const backendUrl = "https://mediq-backend.onrender.com";
 
   const value = {
     aToken,

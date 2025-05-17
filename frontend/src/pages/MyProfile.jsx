@@ -17,7 +17,7 @@ const MyProfile = () => {
       try {
         const token = localStorage.getItem('token');
         console.log(token);
-        const response = await axios.get(import.meta.env.VITE_BACKEND_URL + `/api/v1/user/get-profile`, 
+        const response = await axios.get("https://mediq-backend.onrender.com" + `/api/v1/user/get-profile`, 
           {
             headers: { token }
           }
